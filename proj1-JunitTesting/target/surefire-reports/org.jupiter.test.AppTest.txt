@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: org.jupiter.test.AppTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 1, Skipped: 2, Time elapsed: 0.246 s <<< FAILURE! - in org.jupiter.test.AppTest
+org.jupiter.test.AppTest.testEmployeeAnnualSalValidError  Time elapsed: 0.015 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <java.lang.ArithmeticException> but was: <java.lang.IllegalArgumentException>
+	at org.jupiter.test.AppTest.testEmployeeAnnualSalValidError(AppTest.java:92)
+Caused by: java.lang.IllegalArgumentException: enter valid inputs
+	at org.jupiter.test.AppTest.lambda$testEmployeeAnnualSalValidError$0(AppTest.java:93)
+	at org.jupiter.test.AppTest.testEmployeeAnnualSalValidError(AppTest.java:92)
+
+org.jupiter.test.AppTest.testEmpAnnualSal  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.IllegalArgumentException: enter valid inputs
+	at org.jupiter.test.AppTest.testEmpAnnualSal(AppTest.java:81)
+
