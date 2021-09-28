@@ -21,6 +21,7 @@ public class Student implements Serializable {
 		this.fee = fee;
 		this.address = address;
 		this.standard = standard;
+		System.out.println("Student.Student()");
 	}
   
 
