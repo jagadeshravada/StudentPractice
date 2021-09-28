@@ -1,6 +1,8 @@
 package org.boot.model;
 
 import java.io.Serializable;
+import java.util.Date;
+
 
 public class Student implements Serializable {
     private Integer id;
@@ -8,6 +10,7 @@ public class Student implements Serializable {
     private Double fee;
     private Address address;
     private String standard;
+    private Date dob;
     
     
      
@@ -66,9 +69,18 @@ public class Student implements Serializable {
 		this.standard = standard;
 	}
 
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", fee=" + fee + ", standard=" + standard + "]";
+		return "Student [id=" + id + ", name=" + name + ", fee=" + fee + ", address=" + address + ", standard="
+				+ standard + ", dob=" + dob + "]";
 	}
 
 	
