@@ -22,10 +22,19 @@ public class Student implements Serializable {
 		this.address = address;
 		this.standard = standard;
 	}
+  
 
-	public Student() {
-		System.out.println("student instance 0-param constructor");
+	public Student(Integer id, String name, Double fee, Address address, String standard, Date dob) {
+		//super();
+	
+		this.id = id;
+		this.name = name;
+		this.fee = fee;
+		this.address = address;
+		this.standard = standard;
+		this.dob = dob;
 	}
+
 
 	public Integer getId() {
 		return id;
